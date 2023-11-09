@@ -33,7 +33,7 @@ git clone https://github.com/AbdurRaahimm/Online-Recorder.git
 ![Audio Recorder](./image/image-1.png)
 
 ## Demo
-[Live Demo](https://AbdurRaahimm.github.io/online-recorder/)
+[Live Demo](https://abdurraahimm.github.io/Online-Recorder/)
 
 
 ## Contribute 
