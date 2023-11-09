@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Audio Recorder</title>
+</head>
+<body>
+    <nav>
+        <h1>Online Recorder</h1>
+        <ul>
+            <li><a href="index.html">Screen Recorder</a></li>
+            <li><a href="audio.html">Audio Recorder</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="audio-container">
+            <div class="controls">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="pause">Pause</button>
+                <a id="download" hidden>Download</a>
+            </div>
+            <div class="audio">
+                <audio id="audio" controls></audio>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Created with <span style="color: red;">❤</span> by <a href="">Abdur Rahim</a>.</p>
+
+    </footer>
+    
+    <script type="module" src="./js/audio/audio.js"></script>
+</body>
+</html>

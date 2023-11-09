@@ -1,0 +1,42 @@
+.controls{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.controls button , .controls a{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a4a4a;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* responsive */
+@media screen and (max-width: 768px){
+    .controls{
+        flex-direction: row;
+        padding: 8px 8px;
+        flex-basis: 0;
+        /* flex-wrap: wrap;
+        justify-content: space-around; */
+    }
+    .controls button{
+        margin: 0 10px;
+    }
+
+}

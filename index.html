@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanila Javascript Recording</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>Online Recorder</h1>
+        <ul>
+            <li><a href="#/">Screen Recorder</a></li>
+            <li><a href="/audio.html">Audio Recorder</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="video-container">
+            <div class="controls">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="pause">Pause</button>
+               <a id="download" href="" hidden>Download</a>
+            </div>
+            <div class="video">
+                <video id="preview" autoplay controls muted width="700"></video>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <p>Created with <span style="color: red;">❤</span> by <a href="">Abdur Rahim</a>.</p>
+
+    </footer>
+    <script type="module" src="./js/video/video.js" defer></script>
+</body>
+</html>
