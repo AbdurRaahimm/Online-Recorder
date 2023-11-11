@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Recorder</title>
     <link rel="stylesheet" href="style.css">
-    <title>Audio Recorder</title>
 </head>
 <body>
+
     <nav>
         <h1>Online Recorder</h1>
         <ul>
@@ -17,27 +18,35 @@
         </ul>
         <span><i class="bi bi-list"></i></span>
     </nav>
+
     <main>
-        <h1>Record Your Voice </h1>
-        <div class="audio-container">
+        <h1>Webcam Video Recorder </h1>
+        <div class="photo-container">
             <div class="controls">
-                <button id="start">Start</button>
-                <button id="stop">Stop</button>
-                <button id="pause">Pause</button>
-                <a id="download" hidden>Download</a>
-            </div>
-            <div class="audio">
-                <h3>Your Voice</h3>
-                <audio id="audio" controls autoplay muted></audio>
-            </div>
+                <button id="open">Open Camera</button>
+                <button id="record" hidden>Record Video</button>
+                <button id="stop" hidden>Stop</button>
+                <button id="pause" hidden>Pause</button>
+                <a id="download" href="" hidden>Download</a>
+            </div> 
+            <div class="camera">
+                <h3>Your Camera</h3>
+                <video src="" width="500" autoplay playsinline ></video>
+            </div>   
+        </div>
+        <div class="preview" style="margin: 30px 0; ">
+            <h2>Your Video</h2>
+            <video src="" width="400" controls hidden></video>
         </div>
     </main>
+
+    
+
     <footer>
         <p>Created with <span style="color: red;">❤</span> by <a href="">Abdur Rahim</a>.</p>
 
     </footer>
-    
-    <script type="module" src="./js/audio/audio.js"></script>
+    <script type="module" src="./js/video/video.js" defer></script>
     <script type="module" src="./js/mobile.js" defer></script>
 </body>
 </html>

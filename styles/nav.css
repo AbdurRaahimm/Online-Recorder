@@ -19,12 +19,17 @@ nav ul{
     justify-content: center;
 }
 
-nav ul li:not(:last-child){
-    margin: 0 10px;
-    border-right: 1px solid #333;
-    padding: 0 9px;
+nav ul.show{
+    display: block;
 }
 
+nav ul li{
+    margin: 0 10px;
+    padding: 0 9px;
+}
+nav ul li:not(:last-child){
+    border-right: 1px solid #333;
+}
 
 nav a{
     font-size: 20px;
@@ -37,10 +42,36 @@ nav a:hover{
     border-bottom: 1px dashed #333;
 }
 
+nav span i{
+    display: none;
+}
+
 /* responsive */ 
 @media screen and (max-width: 768px){
-    /* nav{
-        padding: 0;
-        margin: 0;
-    } */
+    nav ul{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        height: 100%;
+        z-index: 999;
+        flex-direction: row;
+        background-color: #fff;
+        color: #000;
+        text-align: left;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px;
+        border-right: 1px solid #333;
+        padding: 10px 20px;
+    }
+
+    nav span i{
+        display: block;
+        font-size: 30px;
+        color: #4a4a4a;
+        cursor: pointer;
+        font-weight: bolder;
+    }
 }

@@ -1,0 +1,29 @@
+.photo-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.photo-container .preview img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo .preview{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+.photo .preview img{
+    margin:5px;
+    /* padding: 0 8px; */
+}
+
+/* responsive */
+@media screen and (max-width: 768px){
+    .photo-container{
+        flex-direction: column;
+    }
+}

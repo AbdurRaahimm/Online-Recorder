@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanila Javascript Recording</title>
+    <title>Take Photo From Camera</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <nav>
         <h1>Online Recorder</h1>
         <ul>
-            <li><a href="#/">Screen Recorder</a></li>
+            <li><a href="./index.html">Screen Recorder</a></li>
             <li><a href="./audio.html">Audio Recorder</a></li>
             <li><a href="./video.html">Video Recorder</a></li>
             <li><a href="./photo.html">Take Photo</a></li>
@@ -20,27 +20,29 @@
     </nav>
 
     <main>
-        <h1>Record Your Device Screen </h1>
-        <div class="video-container">
+        <h1>Webcam Photo Capture</h1>
+        <div class="photo-container">
             <div class="controls">
-                <button id="start">Start</button>
-                <button id="stop">Stop</button>
-                <button id="pause">Pause</button>
-               <a id="download" href="" hidden>Download</a>
-            </div>
-            <div class="video">
-                <h3>Your Record Video</h3>
-                <video id="preview" autoplay controls muted width="700"></video>
-            </div>
+                <button id="open">Open Camera</button>
+                <button id="capture" hidden>Capture Photo</button>
+                <a id="download" href="" hidden>Download</a>
+            </div> 
+            <div class="camera">
+                <h3>Your Camera</h3>
+                <video src="" width="500" autoplay hidden playsinline></video>
+            </div>   
+        </div>
+        <div class="photo">
+            <h3>Your Photos</h3>
+            <div class="preview"></div>
         </div>
     </main>
-    
 
     <footer>
         <p>Created with <span style="color: red;">❤</span> by <a href="">Abdur Rahim</a>.</p>
 
     </footer>
-    <script type="module" src="./js/screen/screen.js" defer></script>
+    <script type="module" src="./js/photo/photo.js" defer></script>
     <script type="module" src="./js/mobile.js" defer></script>
 </body>
 </html>

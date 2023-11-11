@@ -1,6 +1,7 @@
 @import url(./controls.css);
-@import url(./video.css);
+@import url(./screen.css);
 @import url(./audio.css);
+@import url(./photo.css);
 
 main{
     /* height: 100vh; */
